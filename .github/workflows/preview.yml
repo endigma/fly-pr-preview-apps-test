@@ -28,6 +28,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Look at /github/workflows/event.json
+        run: cat /github/workflows/event.json
+
       - name: Deploy
         id: deploy
         uses: superfly/fly-pr-review-apps@1.0.0
