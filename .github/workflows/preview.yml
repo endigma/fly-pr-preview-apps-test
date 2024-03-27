@@ -5,8 +5,11 @@ on:
 
 env:
   FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
-  FLY_REGION: iad
+  FLY_REGION: ewr
   FLY_ORG: personal
+
+permissions:
+  contents: read
 
 jobs:
   staging_app:
